@@ -1,0 +1,83 @@
+*{
+    font-family: sans-serif;
+}
+
+.container{
+    width:600px ;
+    height: fit-content;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form{
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+}
+
+.input{
+    grid-column: span 9;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding : 0px 10px;
+    font-size: 20px;
+}
+.add{
+    grid-column: span 3;
+    cursor: pointer;
+    background-color: rgb(253, 2, 2);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+}
+.add:hover{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.394);
+}
+.tasks{
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.task{
+    background-color: white;
+    padding: 0px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor:text;
+    gap: 10px;
+}
+.delete{
+    background-color: rgb(253, 2, 2);
+    color: white;
+    font-weight: 700;
+    padding: 3px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.update{
+    background-color: rgb(2, 123, 253);
+    color: white;
+    font-weight: 700;
+    padding: 3px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.delete:hover , .update:hover {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.394);
+}
+
+.task p{
+    user-select: none;
+}
